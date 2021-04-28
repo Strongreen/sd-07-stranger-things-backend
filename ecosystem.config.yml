@@ -1,7 +1,7 @@
 apps:
-  - script   : ./index.js
-    name     : 'backend'
+  - script: ./index.js
+    name: 'backend'
     instances: 2
     exec_mode: cluster
-    watch    : false
+    watch: false
     max_memory_restart: 200M
