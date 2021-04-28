@@ -1,6 +1,6 @@
 apps:
 
-- name: strangerThings
+- name: api-upside-down
   script: ./index.js
   max_memory_restart: 200M
   exec_mode: cluster
