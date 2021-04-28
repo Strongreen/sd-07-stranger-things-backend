@@ -4,8 +4,9 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 
-const port = process.env.PORT; 
-const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE;
+const port = process.env.PORT;
+const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE === 'true';
+
 console.log(port);
 console.log(hereIsTheUpsideDown);
 
