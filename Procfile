@@ -1,1 +1,1 @@
-web: pm2 start index.js --watch
+web: pm2-runtime start ecosystem.config.yml
