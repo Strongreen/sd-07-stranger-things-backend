@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "git push origin melissa-gomes-stranger-things-backEnd && git push hawkins master && git push upsidDown master",
+    "deploy": "git push origin melissa-gomes-stranger-things-backEnd && git push hawkins melissa-gomes-stranger-things-backEnd:master && git push upsidDown melissa-gomes-stranger-things-backEnd:master",
     "start": "pm2-runtime start ecosystem.config.yml",
     "start:dev": "pm2 start index.js --watch",
     "test": "jest --runInBand  --detectOpenHandles --forceExit",
