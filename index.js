@@ -13,11 +13,11 @@ const strangerThingsRepository = new StrangerThingsRepository(
 const strangerThingsService = new StrangerThingsService(
   strangerThingsRepository,
 );
-//ss
+// ss
 app.use(cors());
 
 const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE;
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
