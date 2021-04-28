@@ -1,9 +1,6 @@
 apps:
- - name: sagacello #CADA TRACINHO É UMA NOVA INSTANCIA , NOME DO APP PARA APARECER
-   script: ./index.js # NOME DO ARQUIVO  QUE VAI GERAR
-   watch: false # vem false de default
-   exect_mode: cluster # MODO CLUSTER
-   instances: 2 # NUMERO DE INSTANCIAS
-   max_memory_restart: 200M # deu 200 mb de memorio , reinicia
- 
- # ARQUIVOS PARA CONFIGURAR O PM2
+- name: upside-down
+  script: ./index.js
+  exec_mode: cluster
+  instances: 2
+  max_memory_restart: '200M'
