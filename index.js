@@ -1,10 +1,9 @@
 const express = require('express');
-let env = require('dotenv').config();
-const parser = require('dotenv-parse-variables');
+require('dotenv').config();
+require('dotenv-parse-variables');
 const cors = require('cors');
 
-env = parser(env.parsed);
-const { PORT, UPSIDEDOWN_MODE } = env;
+const { PORT, UPSIDEDOWN_MODE } = process.env;
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
