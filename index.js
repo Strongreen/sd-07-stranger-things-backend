@@ -5,7 +5,8 @@ const cors = require('cors');
 require('dotenv').config();
 
 const port = process.env.PORT;
-const hereIsTheUpsideDown = false;
+const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE;
+console.log(hereIsTheUpsideDown);
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
