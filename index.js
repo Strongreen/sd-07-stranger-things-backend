@@ -14,7 +14,7 @@ const strangerThingsRepository = new StrangerThingsRepository(
 const strangerThingsService = new StrangerThingsService(
   strangerThingsRepository,
 );
-// ss
+
 app.use(cors());
 
 const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE;
