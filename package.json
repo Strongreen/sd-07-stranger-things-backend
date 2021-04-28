@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "git push origin vitorRc1-sd-07-stranger-things-backend && git push herokubd vitorRc1-sd-07-stranger-things-backend && git push herokubk vitorRc1-sd-07-stranger-things-backend", 
+    "deploy": "git push origin vitorRc1-sd-07-stranger-things-backend && git push herokubd vitorRc1-sd-07-stranger-things-backend:master && git push herokubk vitorRc1-sd-07-stranger-things-backend:master", 
     "start": "pm2-runtime start ecosystem.config.yml",
     "start:dev": "pm2 start index.js --watch",
     "test": "jest --runInBand  --detectOpenHandles --forceExit",
