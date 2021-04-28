@@ -22,9 +22,6 @@ const strangerThingsService = new StrangerThingsService(
 app.use(cors());
 
 app.get('/', (req, res) => {
-  console.log(UPSIDEDOWN_MODE);
-  console.log(typeof UPSIDEDOWN_MODE);
-  console.log(UPSIDEDOWN_MODE !== 'false');
   const characters = strangerThingsService.search(
     req.query,
     UPSIDEDOWN_MODE !== 'false',
