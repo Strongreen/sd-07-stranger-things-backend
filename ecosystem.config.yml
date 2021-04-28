@@ -1,0 +1,7 @@
+apps:
+ - name: 'BK'
+   script: ./index.js
+   instances: 2
+   watch: false
+   exec_mode: cluster
+   max_memory_restart: 200M
