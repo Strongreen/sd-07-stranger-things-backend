@@ -20,10 +20,11 @@ app.use(cors());
 
 const { PORT, UPSIDEDOWN_MODE } = process.env;
 
-console.log(PORT);
-console.log(UPSIDEDOWN_MODE);
-
 app.get('/', (req, res) => {
+  console.log(PORT);
+  console.log(UPSIDEDOWN_MODE);
+  console.log(typeof PORT);
+  console.log(typeof UPSIDEDOWN_MODE);
   const characters = strangerThingsService.search(
     req.query,
     UPSIDEDOWN_MODE,
