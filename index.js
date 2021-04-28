@@ -6,6 +6,8 @@ require('dotenv').config();
 
 const port = process.env.PORT; 
 const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE;
+console.log(port);
+console.log(hereIsTheUpsideDown);
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
