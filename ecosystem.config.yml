@@ -1,5 +1,5 @@
 apps:
- - name: 'BK'
+ - name: 'app'
    script: ./index.js
    instances: 2
    watch: false
