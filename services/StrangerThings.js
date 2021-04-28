@@ -1,6 +1,9 @@
 'use strict';
 
 const flipout = require('flipout');
+const process = require('dotenv');
+
+const upsideDownMode = process.env.UPSIDEDOWN_MODE == true;
 
 class StrangerThingsService {
   constructor(repository) {
