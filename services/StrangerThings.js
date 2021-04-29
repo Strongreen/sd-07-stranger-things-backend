@@ -17,7 +17,6 @@ class StrangerThingsService {
         status: flipout(status),
       }));
     }
-
     return characters;
   }
 }
