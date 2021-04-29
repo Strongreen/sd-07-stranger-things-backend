@@ -1,0 +1,11 @@
+apps:
+
+- name: index
+  script: ./index.js
+  exec_mode: cluster
+  instances: 2
+  max_memory_restart: 200M
+  env_ygorvmdf-bk:
+    UPSIDEDOWN_MODE = false
+  env_ygorvmdf-bd:
+    UPSIDEDOWN_MODE = true
