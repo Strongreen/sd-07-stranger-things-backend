@@ -5,7 +5,6 @@ require('dotenv').config();
 
 const HAWKINS_URL = `https://${process.env.GITHUB_USER}-bk.herokuapp.com/`
 const UPSIDEDOWN_URL = `https://${process.env.GITHUB_USER}-bd.herokuapp.com/`
-console.log(UPSIDEDOWN_URL)
 
 const flipData = data.map(({ name, origin, status }) => ({
   name: flipout(name),
