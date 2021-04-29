@@ -17,7 +17,7 @@ const strangerThingsService = new StrangerThingsService(
 );
 
 app.use(cors());
-const afirmative = 'true';
+const afirmative = "true";
 
 const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE === afirmative;
 
