@@ -8,6 +8,8 @@ const StrangerThingsService = require('./services/StrangerThings');
 
 const app = express();
 
+// alteração para atualizar avaliador
+
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
 );
