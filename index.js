@@ -7,8 +7,6 @@ const StrangerThingsService = require('./services/StrangerThings');
 
 const app = express();
 
-// comentário para subir ao github
-
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
 );
