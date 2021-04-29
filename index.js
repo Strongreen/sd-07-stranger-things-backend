@@ -10,7 +10,7 @@ const app = express();
 
 const tresMil = 3000;
 
-const PORT = process.eve.PORT || tresMil;
+const PORT = process.env.PORT || tresMil;
 
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
