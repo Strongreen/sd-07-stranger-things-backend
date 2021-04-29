@@ -1,4 +1,4 @@
-// repolho com batata e carne e leite.
+// repolho com batata e carne e leite condensado.
 
 const express = require('express');
 const cors = require('cors');
