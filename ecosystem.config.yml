@@ -1,6 +1,6 @@
 apps:
-  - script   : ./index.js
-    name     : 'tiagoesdras-bk'
+  - script: ./index.js
+    name: 'tiagoesdras'
     instances: 2
     exec_mode: cluster
     max_memory_restart: '200M'
