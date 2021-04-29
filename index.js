@@ -7,7 +7,6 @@ const StrangerThingsService = require('./services/StrangerThings');
 
 const app = express();
 const { PORT, UPSIDEDOWN_MODE } = process.env;
-
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
 );
@@ -16,12 +15,10 @@ const strangerThingsService = new StrangerThingsService(
 );
 
 app.use(cors());
-
 const hereIsTheUpsideDown = (boolInString) => {
   if (boolInString === 'true') return true;
   return false;
 };
-
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
     req.query,
@@ -29,7 +26,6 @@ app.get('/', (req, res) => {
   );
   res.status(200).json(characters);
 });
-
 app.listen(PORT, () => {
   console.log('Escutando na porta 3000');
 });
