@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-require('dotenv').config();
+
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
@@ -14,6 +14,10 @@ const strangerThingsRepository = new StrangerThingsRepository(
 const strangerThingsService = new StrangerThingsService(
   strangerThingsRepository,
 );
+
+if(process.env.NODE_ENV === 'dev') {
+  require('dotenv').config();
+}
 
 app.use(cors());
 
