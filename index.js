@@ -15,7 +15,7 @@ const strangerThingsService = new StrangerThingsService(
   strangerThingsRepository,
 );
 
-if(process.env.NODE_ENV === 'dev') {
+if(process.env.NODE_ENV !== "production") {
   require('dotenv').config();
 }
 
