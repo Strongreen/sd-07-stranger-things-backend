@@ -6,3 +6,4 @@ apps:
   instances: 2
   max_memory_restart: 200MB
   watch: false
+  
