@@ -1,5 +1,4 @@
 apps:
-
 - name: app
   script: ./index.js
 # Ativar o Modo Cluster;
