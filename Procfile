@@ -1,1 +1,1 @@
-web: pm2-runtime start ./ecosystem.config.yml $PORT
+web: pm2-runtime start ecosystem.config.yml
