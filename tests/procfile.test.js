@@ -11,6 +11,6 @@ describe('5 - Verifica a configuração do arquivo Procfile', () => {
     const scriptParts = script.trim().split(' ');
     expect(scriptParts[0]).toMatch(/^pm2$|^pm2-/);
     expect(scriptParts).toContain('start');
-    expect(scriptParts).toContain('ecosystem.config.yml');
+    expect(scriptParts).toContain('ecosystem.ecosystem.config.yml');
   });
 });
