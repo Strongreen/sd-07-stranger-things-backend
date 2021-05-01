@@ -31,6 +31,3 @@ app.get('/', (req, res) => {
 app.listen(process.env.PORT, () => {
   console.log('Escutando na porta 3000');
 });
-
-// 16:00
-// pm2 start index.js --watch --name NOME_APP
