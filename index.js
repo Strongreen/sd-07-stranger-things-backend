@@ -27,6 +27,7 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 const PORT_NUMBER = 3000;
+
 const PORT = process.env.PORT || PORT_NUMBER;
 
 app.listen(PORT, () => {
