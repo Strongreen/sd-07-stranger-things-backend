@@ -33,10 +33,9 @@ Importante: Para esse projeto, as variáveis de ambiente devem ser definidas em 
 
 app.use(cors());
 
-const hereIsTheUpsideDown = true;
+const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE === 'true';
 
-const PORT = process.env.PORT || 3000;
-const UPSIDEDOWN_MODE =  process.env.UPSIDEDOWN_MODE === 'true';
+const PORT = process.env.PORT || 3000; 
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
@@ -44,9 +43,9 @@ app.get('/', (req, res) => {
     hereIsTheUpsideDown,
   );
 
-  res.status(200).json({"name": "uᴉʇɹɐW", "origin": "ʎɹoʇɐɹoqɐ˥ lɐuoᴉʇɐN sƃuᴉʞʍɐH", "status": "ǝʌᴉl∀"});
+  res.status(200).json(characters);
 });
 
 app.listen(PORT, () => {
-  console.log(`Escutando na porta ${PORT} - ${Date()} - ${UPSIDEDOWN_MODE}`);
+  console.log(`Escutando na porta ${PORT} - ${Date()}`);
 });
