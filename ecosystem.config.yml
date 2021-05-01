@@ -1,8 +1,9 @@
 apps:
 
-- name: app
+- name: upsideDown
   script: ./index.js
   exec_mode: cluster
   instances: 2
   max_memory_restart: 200M
   watch: false
+  
