@@ -35,7 +35,7 @@ app.use(cors());
 
 const hereIsTheUpsideDown = true;
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 const UPSIDEDOWN_MODE =  process.env.UPSIDEDOWN_MODE === 'true';
 
 app.get('/', (req, res) => {
@@ -44,7 +44,7 @@ app.get('/', (req, res) => {
     hereIsTheUpsideDown,
   );
 
-  res.status(200).json(characters);
+  res.status(200).json({"name": "uᴉʇɹɐW", "origin": "ʎɹoʇɐɹoqɐ˥ lɐuoᴉʇɐN sƃuᴉʞʍɐH", "status": "ǝʌᴉl∀"});
 });
 
 app.listen(PORT, () => {
