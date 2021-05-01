@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const denv = require('dotenv');
 
-if (NODE_ENV.process.env !== 'production') {
+if (process.env.NODE_ENV !== 'production') {
   denv.config(); // Carrega as variáveis de ambiente em memória
 }
 
