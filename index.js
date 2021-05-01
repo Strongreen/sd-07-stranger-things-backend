@@ -10,7 +10,7 @@ const app = express();
 
 const port = process.env.PORT;
 const upsideDownMode = process.env.UPSIDEDOWN_MODE === 'true';
-console.log(upsideDownMode)
+console.log(upsideDownMode);
 
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
