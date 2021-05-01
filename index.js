@@ -2,11 +2,11 @@ const express = require('express');
 const cors = require('cors');
 const denv = require('dotenv');
 
-const { NODE_ENV, PORT, UPSIDEDOWN_MODE } = process.env;
-
-if (NODE_ENV !== 'production') {
-  denv.config();
+if (NODE_ENV.process.env !== 'production') {
+  denv.config(); // Carrega as variáveis de ambiente em memória
 }
+
+const { PORT, UPSIDEDOWN_MODE } = process.env;
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
