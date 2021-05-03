@@ -7,6 +7,8 @@ const StrangerThingsService = require('./services/StrangerThings');
 
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
 );
@@ -23,6 +25,7 @@ app.get('/', (req, res) => {
     req.query,
     hereIsTheUpsideDown,
   );
+  console.log('blabla')
 
   res.status(200).json(characters);
 });
