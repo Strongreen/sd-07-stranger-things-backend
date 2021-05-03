@@ -17,11 +17,11 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-// const hereIsTheUpsideDown = true;
-const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE;
+/* como o valor padrão de uma variável de abiente é string,
+e a variável pedida no projeto é boolean, transformar antes */
+const hereIsTheUpsideDown = Boolean(process.env.UPSIDEDOWN_MODE);
 const port = process.env.PORT || 3000;
 
-console.log(hereIsTheUpsideDown, port);
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
     req.query,
