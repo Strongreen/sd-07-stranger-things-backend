@@ -1,5 +1,5 @@
 apps:
-    -name: App
+    name: App
     script: ./index.js
     exec_mode: cluster
     instances: 2
