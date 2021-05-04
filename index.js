@@ -31,5 +31,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`procesando na porta ${port}`);
+  console.log(`escute na porta ${port}`);
 });
