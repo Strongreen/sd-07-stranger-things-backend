@@ -8,7 +8,7 @@ const StrangerThingsService = require('./services/StrangerThings');
 
 const app = express();
 const { PORT, UPSIDEDOWN_MODE } = process.env;
-const hereIsTheUpsideDown = UPSIDEDOWN_MODE === 'true';
+const hereIsTheUpsideDown = UPSIDEDOWN_MODE === 'false';
 
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
