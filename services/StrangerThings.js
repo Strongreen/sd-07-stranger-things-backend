@@ -2,6 +2,8 @@
 
 const flipout = require('flipout');
 
+//comentário inocente
+
 class StrangerThingsService {
   constructor(repository) {
     this.repository = repository;
