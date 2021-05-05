@@ -19,7 +19,7 @@ app.use(cors());
 
 /* como o valor padrão de uma variável de abiente é string,
 e a variável pedida no projeto é boolean, transformar antes */
-const hereIsTheUpsideDown = Boolean(process.env.UPSIDEDOWN_MODE);
+const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE === 'true';
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
