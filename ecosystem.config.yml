@@ -1,6 +1,6 @@
 apps:
 
-- name: app
+- name: app-upside-down
   script: ./index.js
   exec_mode: cluster
   instances: 2
