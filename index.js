@@ -39,9 +39,10 @@ app.listen(PORT, () => {
   console.log(`Escutando na porta ${PORT}`);
 });
 
-// ajuda de Zega, Thadeu Castelo Branco, Mateus Leite
+// Referencias
+// Vanessa Oliveira, André Possa, Zega, Matheus Almeida eThadeu Castelo Branco
 // git push upside-down rodrigoandrademelo-sd-07-stranger-things-backend:master
 // git push hawkins rodrigoandrademelo-sd-07-stranger-things-backend:master
 
 // bd=invertido
-// git remote rename heroku hawkins 
+// git remote rename heroku hawkins
