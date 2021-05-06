@@ -20,7 +20,7 @@ const strangerThingsService = new StrangerThingsService(
 app.use(cors());
 
 // const hereIsTheUpsideDown = true;
-const hereIsTheUpsideDown = UPSIDEDOWN_MODE;
+const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE === 'true';
 // const UPSIDEDOWN_MODE = process.env.UPSIDEDOWN_MODE === 'true';
 // const PORT = process.env.PORT || 3000;
 // const PORT = process.env.PORT;
@@ -40,5 +40,8 @@ app.listen(PORT, () => {
 });
 
 // ajuda de Zega, Thadeu Castelo Branco, Mateus Leite
-// git push heroku rodrigoandrademelo-sd-07-stranger-things-frontend:master
+// git push upside-down rodrigoandrademelo-sd-07-stranger-things-backend:master
+// git push hawkins rodrigoandrademelo-sd-07-stranger-things-backend:master
+
 // bd=invertido
+// git remote rename heroku hawkins 
