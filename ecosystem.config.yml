@@ -5,4 +5,3 @@ apps:
   exec_mode: 'cluster'
   instances: 2
   max_memory_restart: '200M'
-  watch: false
