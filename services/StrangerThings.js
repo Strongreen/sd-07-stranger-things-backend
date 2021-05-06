@@ -2,7 +2,7 @@
 
 const flipout = require('flipout');
 
-//comentário inocente
+//comentário inocentes
 
 class StrangerThingsService {
   constructor(repository) {
