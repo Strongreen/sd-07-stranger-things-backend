@@ -1,7 +1,8 @@
 apps:
-- name: APP_1
-script: ./index.js
-watch: false
-exec_mode: cluster
-instances: 2
-max_memory_restart: '200M' 
+
+- name: app
+  script: ./index.js
+  watch: false
+  exec_mode: cluster
+  instances: 2
+  max_memory_restart: '200M' 
