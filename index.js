@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+const { PORT, SUCCESS } = require('Codes.js');
+
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
@@ -18,17 +20,13 @@ app.use(cors());
 
 const hereIsTheUpsideDown = true;
 
-app.get('/', (req, res) => {
+app.get('/', (__req, res) => {
   const characters = strangerThingsService.search(
     req.query,
     hereIsTheUpsideDown,
   );
 
-  res.status(200).json(characters);
+  res.status(SUCCESS).json(characters);
 });
 
-// Começando o projeto
-
-app.listen(3000, () => {
-  console.log('Escutando na porta 3000');
-});
+app.listen(PORT);
