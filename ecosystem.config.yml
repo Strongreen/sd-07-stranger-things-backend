@@ -1,0 +1,11 @@
+apps:
+  - name: hawkins
+    script: ./index.js
+    exec_mode: cluster
+    watch: false
+    instances: 2
+    max_memory_restart: 200M
+    env_jvitorof-bk:
+      UPSIDEDOWN_MODE: false
+    env_jvitorof-bd:
+      UPSIDEDOWN_MODE: true
