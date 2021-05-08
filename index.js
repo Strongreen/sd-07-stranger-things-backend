@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 const process = require('process');
+
 const { PORT, UPSIDEDOWN_MODE } = process.env;
 const SUCCESS = 200;
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
