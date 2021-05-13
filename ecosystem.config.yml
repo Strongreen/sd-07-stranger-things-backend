@@ -1,0 +1,6 @@
+# apps:
+#   - name: APP_1
+#     script: ./index.js
+#     watch: false
+#     exec_mode: cluster
+#     instances: 2
