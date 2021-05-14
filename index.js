@@ -32,3 +32,6 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Escutando na porta ${PORT}`);
 });
+
+// heroku create cleberfontinele-bd --remote upsideDown 
+// git remote rename heroku hawkins 
