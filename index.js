@@ -18,6 +18,7 @@ const strangerThingsService = new StrangerThingsService(
 app.use(cors());
 
 let hereIsTheUpsideDown = true;
+
 const { UPSIDEDOWN_MODE } = process.env;
 if (UPSIDEDOWN_MODE === 'false') hereIsTheUpsideDown = false;
 
@@ -29,6 +30,7 @@ app.get('/', (req, res) => {
 
   res.status(200).json(characters);
 });
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
