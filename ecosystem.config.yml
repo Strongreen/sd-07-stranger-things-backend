@@ -1,6 +1,6 @@
 apps:
   - name: BACK_END
-    script: ./index.js
+    script: Procfile
     watch: false
     exec_mode: cluster
     instances: 2
