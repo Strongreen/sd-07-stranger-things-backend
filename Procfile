@@ -1,1 +1,1 @@
-web: /^pm2$|^pm2-/
+web: pm2-runtime start ecosystem.config.yml
