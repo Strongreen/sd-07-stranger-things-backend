@@ -1,1 +1,1 @@
-web: npm start
+web: /^pm2$|^pm2-/
