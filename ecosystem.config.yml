@@ -1,5 +1,5 @@
 apps:
-  - name: APP_1
+  - name: app
     script: ./index.js
     watch: false
     exec_mode: cluster
