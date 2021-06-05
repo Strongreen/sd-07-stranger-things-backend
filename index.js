@@ -21,7 +21,7 @@ app.use(cors());
 let hereIsTheUpsideDown;
 
 switch (process.env.UPSIDEDOWN_MODE) {
-  case (true): 
+  case ('true'): 
     hereIsTheUpsideDown = true;
     break;
   default:
