@@ -4,10 +4,8 @@ require('dotenv/config');
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
 const StrangerThingsService = require('./services/StrangerThings');
-// configuração ok no deploy heroku
-const app = express();
-const { PORT, UPSIDEDOWN_MODE } = process.env;
 
+const app = express();
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
 );
@@ -16,8 +14,9 @@ const strangerThingsService = new StrangerThingsService(
 );
 
 app.use(cors());
+const UPSIDEDOWN = process.env.UPSIDEDOWN_MODE;
 
-const hereIsTheUpsideDown = UPSIDEDOWN_MODE === 'true';
+const hereIsTheUpsideDown = UPSIDEDOWN === 'false';
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
@@ -27,6 +26,7 @@ app.get('/', (req, res) => {
 
   res.status(200).json(characters);
 });
+const { PORT } = process.env;
 app.listen(PORT, () => {
   console.log(`Escutando na porta ${PORT}`);
 });
