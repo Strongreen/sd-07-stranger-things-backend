@@ -15,6 +15,7 @@ const GITHUB_USER = process.env.GITHUB_USER
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
 );
+
 const strangerThingsService = new StrangerThingsService(
   strangerThingsRepository,
 );
