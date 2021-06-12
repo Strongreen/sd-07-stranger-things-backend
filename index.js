@@ -8,9 +8,7 @@ const StrangerThingsService = require('./services/StrangerThings');
 
 const app = express();
 
-const PORT = process.env.PORT;
-const UPSIDEDOWN_MODE = process.env.UPSIDEDOWN_MODE;
-const GITHUB_USER = process.env.GITHUB_USER
+const { PORT, UPSIDEDOWN_MODE, GITHUB_USER } = process.env;
 
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
@@ -34,5 +32,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Escutando na porta ${PORT}`);
+  console.log(`Projeto avaliação de ${GITHUB_USER} Escutando na porta ${PORT}`);
 });
