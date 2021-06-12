@@ -8,7 +8,7 @@ const StrangerThingsService = require('./services/StrangerThings');
 
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 const UPSIDEDOWN_MODE = process.env.UPSIDEDOWN_MODE;
 const GITHUB_USER = process.env.GITHUB_USER
 
@@ -22,7 +22,7 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-const hereIsTheUpsideDown = UPSIDEDOWN_MODE === true;
+const hereIsTheUpsideDown = UPSIDEDOWN_MODE === 'true';
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
