@@ -25,7 +25,6 @@ app.get('/', (req, res) => {
     req.query,
     UPSIDEDOWN_MODE === 'true',
   );
-
   res.status(200).json(characters);
 });
 
